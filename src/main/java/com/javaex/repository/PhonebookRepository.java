@@ -19,7 +19,12 @@ public class PhonebookRepository {
 	
 	//method normal
 	public List<PhonebookVO> phonebookSelect(){
+		System.out.println("PhonebookRepository.phonebookSelect()");
 		
-		return null;
+		List<PhonebookVO> phonebookList = sqlsession.selectList("phonebook.selectList");
+		
+		System.out.println(phonebookList);
+		
+		return phonebookList;
 	}
 }

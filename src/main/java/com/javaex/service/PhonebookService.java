@@ -23,6 +23,6 @@ public class PhonebookService {
 		
 		List<PhonebookVO> phonebookList = phonebookrepository.phonebookSelect();
 		
-		return null;
+		return phonebookList;
 	}
 }

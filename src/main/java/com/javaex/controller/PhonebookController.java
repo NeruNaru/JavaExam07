@@ -29,6 +29,8 @@ public class PhonebookController {
 		
 		List<PhonebookVO> phonebookList = phonebookservice.exeGetPhonebookList();
 		
-		return null;
+		model.addAttribute("pList", phonebookList);
+		
+		return "/list";
 	}
 }
